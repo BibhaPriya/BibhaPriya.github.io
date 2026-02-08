@@ -1,36 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Intelligent Devices – Free Technical Courses</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intelligent Devices – Free Engineering Courses</title>
+
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #0f172a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #2563eb);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+      text-align: center;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .course-card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .course-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--secondary);
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .course-card a {
+      align-self: flex-start;
+      text-decoration: none;
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+    }
+
+    .course-card a:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--secondary);
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Intelligent Devices</h1>
-    <p>Free hands-on courses in Embedded Systems & Machine Learning</p>
+    <p>Free, practical engineering courses — explained simply</p>
   </header>
 
-  <section class="courses">
-    <h2>Popular Courses</h2>
+  <main>
+    <section>
+      <h2>Free YouTube Courses</h2>
 
-    <div class="course-card">
-      <h3>FreeRTOS – From Basics to Hands-On</h3>
-      <p>Understand tasks, queues, memory, and scheduling with ESP-IDF.</p>
-      <a href="https://www.youtube.com/PLAYLIST_LINK" target="_blank">Watch on YouTube</a>
-    </div>
+      <div class="courses">
 
-    <div class="course-card">
-      <h3>Machine Learning for Beginners</h3>
-      <p>Clear explanations of ML concepts with practical intuition.</p>
-      <a href="https://www.youtube.com/PLAYLIST_LINK" target="_blank">Watch on YouTube</a>
-    </div>
+        <div class="course-card">
+          <h3>FreeRTOS – Complete Hands-On Series</h3>
+          <p>
+            Learn FreeRTOS from basics to advanced concepts with practical
+            examples on embedded systems.
+          </p>
+          <a href="https://www.youtube.com/" target="_blank">Watch on YouTube</a>
+        </div>
 
-  </section>
+        <div class="course-card">
+          <h3>Embedded C Programming</h3>
+          <p>
+            Master Embedded C fundamentals, memory concepts, and real-world
+            microcontroller examples.
+          </p>
+          <a href="https://www.youtube.com/" target="_blank">Watch on YouTube</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Machine Learning for Beginners</h3>
+          <p>
+            A beginner-friendly introduction to machine learning concepts with
+            simple explanations and examples.
+          </p>
+          <a href="https://www.youtube.com/" target="_blank">Watch on YouTube</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Linux & Ubuntu Internals</h3>
+          <p>
+            Understand how Linux works internally — processes, memory,
+            scheduling, and system basics.
+          </p>
+          <a href="https://www.youtube.com/" target="_blank">Watch on YouTube</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© Intelligent Devices</p>
+    © <span>Intelligent Devices</span> · Free Education · Powered by YouTube
   </footer>
 
 </body>
